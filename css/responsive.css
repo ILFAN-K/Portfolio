@@ -1,0 +1,256 @@
+/* ========== RESPONSIVE STYLES ========== */
+
+/* Tablets and large phones (landscape) */
+@media (max-width: 1024px) {
+    html {
+        font-size: 55%;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        order: 2;
+    }
+
+    .cube-container {
+        order: 1;
+        margin-bottom: 5rem;
+    }
+
+    .cta-buttons {
+        justify-content: center;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-text {
+        margin-bottom: 5rem;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        margin-bottom: 5rem;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+    header {
+        padding: 2rem 5%;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: var(--white);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        transition: right var(--transition-normal);
+        box-shadow: var(--shadow-lg);
+        z-index: 90;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 100;
+    }
+
+    .hamburger.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 6px);
+    }
+
+    .hamburger.active .line2 {
+        opacity: 0;
+    }
+
+    .hamburger.active .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 80;
+        opacity: 0;
+        visibility: hidden;
+        transition: all var(--transition-normal);
+    }
+
+    .overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+
+    .project-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline::before {
+        left: 2.5rem;
+    }
+
+    .timeline-icon {
+        left: 2.5rem;
+    }
+
+    .timeline-content {
+        width: calc(100% - 8rem);
+        margin-left: 8rem !important;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content::before,
+    .timeline-item:nth-child(even) .timeline-content::before {
+        left: -1rem;
+        right: auto;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and down) */
+@media (max-width: 600px) {
+    .section-header h2 {
+        font-size: 3rem;
+    }
+
+    .cube {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .face {
+        font-size: 3rem;
+    }
+
+    .face i {
+        font-size: 4.5rem;
+    }
+
+    .front, .back, .right, .left, .top, .bottom {
+        transform: translateZ(7.5rem);
+    }
+
+    .back {
+        transform: rotateY(180deg) translateZ(7.5rem);
+    }
+
+    .right {
+        transform: rotateY(90deg) translateZ(7.5rem);
+    }
+
+    .left {
+        transform: rotateY(-90deg) translateZ(7.5rem);
+    }
+
+    .top {
+        transform: rotateX(90deg) translateZ(7.5rem);
+    }
+
+    .bottom {
+        transform: rotateX(-90deg) translateZ(7.5rem);
+    }
+
+    .contact-form {
+        padding: 3rem;
+    }
+
+    .category-selector {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .category-btn {
+        width: 100%;
+        max-width: 30rem;
+    }
+}
+
+/* Extra small devices (phones, 480px and down) */
+@media (max-width: 480px) {
+    html {
+        font-size: 45%;
+    }
+
+    .logo h1 {
+        font-size: 2rem;
+    }
+
+    .project-box {
+        height: 45rem;
+    }
+
+    .timeline-content {
+        width: calc(100% - 6rem);
+        margin-left: 6rem !important;
+        padding: 1.5rem;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-icon {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .back-to-top {
+        bottom: 2rem;
+        right: 2rem;
+        width: 4rem;
+        height: 4rem;
+        font-size: 1.8rem;
+    }
+}
+
+/* Fix for very small phones */
+@media (max-width: 360px) {
+    html {
+        font-size: 40%;
+    }
+
+    .cube-container {
+        transform: scale(0.8);
+    }
+}
