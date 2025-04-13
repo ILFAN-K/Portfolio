@@ -19,6 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Initialize category tabs for Education section
     initCategoryTabs();
+    
+    // Initialize certificate modal
+    initCertificateModal();
 });
 
 /**

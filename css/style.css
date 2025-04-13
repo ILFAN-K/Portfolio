@@ -650,6 +650,90 @@ header.scrolled {
     color: var(--text-light);
 }
 
+/* ========== CERTIFICATE MODAL STYLES ========== */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    overflow: auto;
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+}
+
+.modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.modal-content {
+    position: relative;
+    background-color: var(--white);
+    margin: 5rem auto;
+    padding: 4rem;
+    border-radius: var(--radius-lg);
+    max-width: 80%;
+    width: 800px;
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all var(--transition-normal);
+}
+
+.modal.active .modal-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 3rem;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: color var(--transition-fast);
+}
+
+.close-btn:hover {
+    color: var(--primary-color);
+}
+
+.certificate-container {
+    text-align: center;
+}
+
+.certificate-container h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.certificate-container p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+.certificate-image {
+    margin: 2rem 0;
+    max-height: 500px;
+    overflow: auto;
+    border: 1px solid #eee;
+    padding: 1rem;
+}
+
+.certificate-image img {
+    width: 100%;
+    height: auto;
+}
+
 /* ========== PROJECTS SECTION STYLES ========== */
 .projects {
     background-color: var(--bg-color);
