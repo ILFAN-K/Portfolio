@@ -224,3 +224,73 @@ function initCategoryTabs() {
         });
     });
 }
+
+/**
+ * Initialize certificate modal
+ */
+function initCertificateModal() {
+    const certButtons = document.querySelectorAll('.cert-btn');
+    const modal = document.getElementById('certificate-modal');
+    const closeBtn = document.querySelector('.close-btn');
+    const modalTitle = document.getElementById('modal-cert-title');
+    const modalIssuer = document.getElementById('modal-cert-issuer');
+    const modalDate = document.getElementById('modal-cert-date');
+    const modalImage = document.getElementById('modal-cert-image');
+    
+    // Open modal when certificate button is clicked
+    certButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            // Get certificate data from data attributes
+            const title = button.getAttribute('data-cert-title');
+            const issuer = button.getAttribute('data-cert-issuer');
+            const date = button.getAttribute('data-cert-date');
+            const image = button.getAttribute('data-cert-image');
+            
+            // Set modal content
+            modalTitle.textContent = title;
+            modalIssuer.textContent = issuer;
+            modalDate.textContent = date;
+            modalImage.src = image;
+            
+            // Show modal
+            modal.classList.add('active');
+            setTimeout(() => {
+                modal.querySelector('.modal-content').style.opacity = '1';
+                modal.querySelector('.modal-content').style.transform = 'translateY(0)';
+            }, 10);
+            
+            // Prevent body scrolling
+            document.body.style.overflow = 'hidden';
+        });
+    });
+    
+    // Close modal when close button is clicked
+    closeBtn.addEventListener('click', closeModal);
+    
+    // Close modal when clicking outside of modal content
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+    
+    // Close modal with escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
+    });
+    
+    // Close modal function
+    function closeModal() {
+        modal.querySelector('.modal-content').style.opacity = '0';
+        modal.querySelector('.modal-content').style.transform = 'translateY(-50px)';
+        
+        setTimeout(() => {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }, 300);
+    }
+}
