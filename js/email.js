@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     (function() {
         // Initialize EmailJS with your public key
         // In a real environment, you'd use the provided service ID from environment variables
-        emailjs.init("YOUR_PUBLIC_KEY");
+        emailjs.init("CADtR_uqY79dm8Inv");
     })();
     
     // Initialize contact form
@@ -59,7 +59,7 @@ function initContactForm() {
         
         // Send the email
         // Replace these IDs with your actual EmailJS service, template, and user IDs
-        emailjs.send('service_id', 'template_id', templateParams)
+        emailjs.send('service_nwj51el', 'template_17hjtm3', templateParams)
             .then(function(response) {
                 console.log('SUCCESS!', response.status, response.text);
                 
