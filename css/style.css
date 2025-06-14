@@ -129,6 +129,7 @@ button {
 
 .primary-btn:hover {
     background-color: var(--primary-dark);
+    color: whitesmoke;
     box-shadow: 0 6px 20px rgba(108, 99, 255, 0.4);
     transform: translateY(-2px);
 }

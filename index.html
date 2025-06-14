@@ -35,26 +35,6 @@
   </head>
 
   <body>
-    <!-- Certificate Modal -->
-    <div id="certificate-modal" class="modal">
-      <div class="modal-content">
-        <span class="close-btn">&times;</span>
-        <div class="certificate-container">
-          <h2 id="modal-cert-title">Certificate Title</h2>
-          <p id="modal-cert-issuer">Issuer</p>
-          <div class="certificate-image">
-            <!-- Placeholder for certificate image -->
-            <img
-              id="modal-cert-image"
-              src="assets/placeholder-certificate.svg"
-              alt="Certificate"
-            />
-          </div>
-          <p id="modal-cert-date" class="cert-date">Date</p>
-        </div>
-      </div>
-    </div>
-
     <!-- Preloader -->
     <div class="preloader">
       <div class="loader"></div>
@@ -102,8 +82,8 @@
               </h1>
               <h2 class="title">Data Analyst</h2>
               <p class="description">
-                I create engaging digital experiences with clean and
-                creative solutions.
+                I create engaging digital experiences with clean and creative
+                solutions.
               </p>
               <div class="cta-buttons">
                 <a href="#projects" class="btn primary-btn">View My Work</a>
@@ -440,6 +420,26 @@
             </div>
           </div>
 
+          <!-- Certificate Modal -->
+          <div id="certificate-modal" class="modal">
+            <div class="modal-content">
+              <span class="close-btn">&times;</span>
+              <div class="certificate-container">
+                <h2 id="modal-cert-title">Certificate Title</h2>
+                <p id="modal-cert-issuer">Issuer</p>
+                <div class="certificate-image">
+                  <!-- Placeholder for certificate image -->
+                  <img
+                    id="modal-cert-image"
+                    src="assets/placeholder-certificate.svg"
+                    alt="Certificate"
+                  />
+                </div>
+                <p id="modal-cert-date" class="cert-date">Date</p>
+              </div>
+            </div>
+          </div>
+
           <!-- Certification Content -->
           <div id="certification-content" class="category-content">
             <div class="cards-container">
@@ -460,6 +460,26 @@
                     data-cert-issuer="Coursera"
                     data-cert-date="2023"
                     data-cert-image="assets/certificate/python.jpeg"
+                    >View Certificate</a
+                  >
+                </div>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-icon">
+                  <i class="fa-brands fa-python"></i>
+                </div>
+                <div class="cert-details">
+                  <h3>Python</h3>
+                  <p>GUVI</p>
+                  <p class="cert-date">Dec 2023</p>
+                  <a
+                    href="#"
+                    class="btn cert-btn"
+                    data-cert-title="Python"
+                    data-cert-issuer="GUVI"
+                    data-cert-date="Dec 2023"
+                    data-cert-image="assets/certificate/GUVI-python.jpg"
                     >View Certificate</a
                   >
                 </div>
@@ -492,14 +512,34 @@
                 <div class="cert-details">
                   <h3>Programming in JAVA</h3>
                   <p>NPTEL</p>
-                  <p class="cert-date">Oct 2024</p>
+                  <p class="cert-date">Jul-Oct 2024</p>
                   <a
                     href="#"
                     class="btn cert-btn"
                     data-cert-title="Programming in JAVA"
                     data-cert-issuer="NPTEL"
-                    data-cert-date="OCT 2024"
+                    data-cert-date="Jul-Oct 2024"
                     data-cert-image="assets/certificate/NPTEL.png"
+                    >View Certificate</a
+                  >
+                </div>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-icon">
+                  <i class="fa-solid fa-database"></i>
+                </div>
+                <div class="cert-details">
+                  <h3>MongoDB Basics for Students</h3>
+                  <p>MongoDB</p>
+                  <p class="cert-date">Jun 2025</p>
+                  <a
+                    href="#"
+                    class="btn cert-btn"
+                    data-cert-title="MongoDB Basics for Students"
+                    data-cert-issuer="MongoDB"
+                    data-cert-date="Jun 2025"
+                    data-cert-image="assets/certificate/MongoDB.jpg"
                     >View Certificate</a
                   >
                 </div>
