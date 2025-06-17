@@ -1,554 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | ILFAN</title>
-    <meta
-      name="description"
-      content="Personal portfolio showcasing my work, skills, and experience"
-    />
 
-    <!-- Font Awesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | ILFAN</title>
+  <meta name="description" content="Personal portfolio showcasing my work, skills, and experience" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
 
-    <!-- EmailJS SDK -->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-  </head>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
 
-  <body>
-    <!-- Preloader -->
-    <div class="preloader">
-      <div class="loader"></div>
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 0L40 20L20 40L0 20L20 0Z" fill="#6C63FF" />
+        <path d="M20 10L30 20L20 30L10 20L20 10Z" fill="white" />
+      </svg>
+      <h1>K. MOHHAMED <span>ILFAN</span></h1>
     </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </header>
 
-    <!-- Header Section -->
-    <header>
-      <div class="logo">
-        <svg
-          width="40"
-          height="40"
-          viewBox="0 0 40 40"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M20 0L40 20L20 40L0 20L20 0Z" fill="#6C63FF" />
-          <path d="M20 10L30 20L20 30L10 20L20 10Z" fill="white" />
-        </svg>
-        <h1>K. MOHHAMED <span>ILFAN</span></h1>
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="section home">
+      <div class="container">
+        <div class="home-content">
+          <div class="text-content">
+            <h1 class="greeting">
+              Hello, I'm <span>K. MOHHAMED ILFAN</span>
+            </h1>
+            <h2 class="title">Data Analyst</h2>
+            <p class="description">
+              I create engaging digital experiences with clean and creative
+              solutions.
+            </p>
+            <div class="cta-buttons">
+              <a href="#projects" class="btn primary-btn">View My Work</a>
+              <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+            </div>
+          </div>
+          <div class="cube-container">
+            <div class="cube">
+              <div class="face front">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="face back">
+                <i class="fas fa-terminal"></i>
+              </div>
+              <div class="face right">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <div class="face left">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <div class="face top">
+                <i class="fas fa-server"></i>
+              </div>
+              <div class="face bottom">
+                <i class="fas fa-database"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <div class="mouse"></div>
+          <p>Scroll Down</p>
+        </div>
       </div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="hamburger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-    </header>
+    </section>
 
-    <main>
-      <!-- Home Section -->
-      <section id="home" class="section home">
-        <div class="container">
-          <div class="home-content">
-            <div class="text-content">
-              <h1 class="greeting">
-                Hello, I'm <span>K. MOHHAMED ILFAN</span>
-              </h1>
-              <h2 class="title">Data Analyst</h2>
-              <p class="description">
-                I create engaging digital experiences with clean and creative
-                solutions.
-              </p>
-              <div class="cta-buttons">
-                <a href="#projects" class="btn primary-btn">View My Work</a>
-                <a href="#contact" class="btn secondary-btn">Get In Touch</a>
-              </div>
-            </div>
-            <div class="cube-container">
-              <div class="cube">
-                <div class="face front">
-                  <i class="fas fa-code"></i>
-                </div>
-                <div class="face back">
-                  <i class="fas fa-terminal"></i>
-                </div>
-                <div class="face right">
-                  <i class="fas fa-paint-brush"></i>
-                </div>
-                <div class="face left">
-                  <i class="fas fa-mobile-alt"></i>
-                </div>
-                <div class="face top">
-                  <i class="fas fa-server"></i>
-                </div>
-                <div class="face bottom">
-                  <i class="fas fa-database"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="scroll-indicator">
-            <div class="mouse"></div>
-            <p>Scroll Down</p>
-          </div>
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-header">
+          <h2>About Me</h2>
+          <div class="underline"></div>
         </div>
-      </section>
-
-      <!-- About Section -->
-      <section id="about" class="section about">
-        <div class="container">
-          <div class="section-header">
-            <h2>About Me</h2>
-            <div class="underline"></div>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Motivated and detail-oriented aspiring Data Analyst with a solid
+              foundation in data analysis and visualization.
+              <b>Proficient in tools and technologies including Excel, Power
+                BI, Pandas, NumPy, and Matplotlib</b>. Skilled in extracting, cleaning, and interpreting data to
+              uncover meaningful insights and support strategic
+              decision-making. Eager to apply analytical and problem-solving
+              skills in a real-world setting through an internship
+              opportunity, while continuously learning and contributing to
+              data-driven initiatives.
+            </p>
+            <a href="assets/Resume.pdf" download class="btn resume-btn">Download Resume <i
+                class="fas fa-download"></i></a>
           </div>
-          <div class="about-content">
-            <div class="about-text">
-              <p>
-                I'm a passionate tech learner exploring AI, Data Science, and
-                software development. I enjoy solving real-world problems
-                through code and creative thinking.
-              </p>
-              <p>
-                I have an intermediate skills in
-                <b>HTML, CSS, JavaScript, Python, and Java</b> along with
-                beginner experience in <b>React and SQL</b>. I enjoy building
-                innovative projects and constantly aim to grow my knowledge
-                through practical, impactful work.
-              </p>
-              <a href="assets/Resume.pdf" download class="btn resume-btn"
-                >Download Resume <i class="fas fa-download"></i
-              ></a>
-            </div>
-            <div class="skills-container">
-              <h3 class="skills-title">My Skills</h3>
-              <div class="skills">
-                <div class="skill-item" data-skill="HTML5">
-                  <div class="skill-icon">
-                    <i class="fab fa-html5"></i>
-                  </div>
-                  <div class="skill-info">
-                    <h4>HTML5</h4>
-                    <div class="progress-bar">
-                      <div class="progress" style="width: 95%"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="skill-item" data-skill="CSS3">
-                  <div class="skill-icon">
-                    <i class="fab fa-css3-alt"></i>
-                  </div>
-                  <div class="skill-info">
-                    <h4>CSS3</h4>
-                    <div class="progress-bar">
-                      <div class="progress" style="width: 90%"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="skill-item" data-skill="JavaScript">
-                  <div class="skill-icon">
-                    <i class="fab fa-js"></i>
-                  </div>
-                  <div class="skill-info">
-                    <h4>JavaScript</h4>
-                    <div class="progress-bar">
-                      <div class="progress" style="width: 85%"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="skill-item" data-skill="React">
-                  <div class="skill-icon">
-                    <i class="fab fa-react"></i>
-                  </div>
-                  <div class="skill-info">
-                    <h4>React</h4>
-                    <div class="progress-bar">
-                      <div class="progress" style="width: 80%"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="skill-item" data-skill="java">
-                  <div class="skill-icon">
-                    <i class="fa-brands fa-java"></i>
-                  </div>
-                  <div class="skill-info">
-                    <h4>JAVA</h4>
-                    <div class="progress-bar">
-                      <div class="progress" style="width: 75%"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="skill-item" data-skill="python">
-                  <div class="skill-icon">
-                    <i class="fa-brands fa-python"></i>
-                  </div>
-                  <div class="skill-info">
-                    <h4>Python</h4>
-                    <div class="progress-bar">
-                      <div class="progress" style="width: 85%"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="animated-section">
-            <div class="floating-shapes">
-              <div class="shape shape1"></div>
-              <div class="shape shape2"></div>
-              <div class="shape shape3"></div>
-              <div class="shape shape4"></div>
-            </div>
-            <div class="quote">
-              <blockquote>
-                "The best way to predict the future is to create it."
-              </blockquote>
-              <cite>- Abraham Lincoln</cite>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Projects Section -->
-      <section id="projects" class="section projects">
-        <div class="container">
-          <div class="section-header">
-            <h2>My Projects</h2>
-            <div class="underline"></div>
-          </div>
-          <div class="project-gallery">
-            <!-- Project 1 -->
-            <div class="project-card">
-              <div class="project-box">
-                <div class="project-box-front">
-                  <div class="project-icon">
-                    <i class="fa-solid fa-tree"></i>
-                  </div>
-                  <h3>Decision Tree Algorithm</h3>
-                  <p>
-                    ID3 and C4.5 Decision Tree Algorithm with an interactive and
-                    engaging interface.
-                  </p>
-                  <div class="project-buttons">
-                    <a
-                      href="https://github.com/ILFAN-K/Decision-Tree"
-                      class="btn project-btn github-btn"
-                    >
-                      <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                  </div>
-                </div>
-                <div class="project-box-back">
-                  <h4>Technologies Used</h4>
-                  <ul class="tech-list">
-                    <li>Python</li>
-                    <li>Machine Learning</li>
-                    <li>Flask</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-card">
-              <div class="project-box">
-                <div class="project-box-front">
-                  <div class="project-icon">
-                    <i class="fa-solid fa-gamepad"></i>
-                  </div>
-                  <h3>Tic-Tac-Toe</h3>
-                  <p>
-                    Classic Tic-Tac-Toe game with an interactive and engaging
-                    interface.
-                  </p>
-                  <div class="project-buttons">
-                    <a
-                      href="https://github.com/ILFAN-K/Tic-Tac-Toe"
-                      class="btn project-btn github-btn"
-                    >
-                      <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                  </div>
-                </div>
-                <div class="project-box-back">
-                  <h4>Technologies Used</h4>
-                  <ul class="tech-list">
-                    <li>JAVA</li>
-                    <li>JavaFX</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card">
-              <div class="project-box">
-                <div class="project-box-front">
-                  <div class="project-icon">
-                    <i class="fa-solid fa-dollar-sign"></i>
-                  </div>
-                  <h3>Currency Convertor</h3>
-                  <p>
-                    Efficient real-time currency converter for accurate global
-                    exchange rate calculations.
-                  </p>
-                  <div class="project-buttons">
-                    <a
-                      href="https://github.com/ILFAN-K/Currency_Convertor"
-                      class="btn project-btn github-btn"
-                    >
-                      <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                    <a
-                      href="https://ilfan-k.github.io/Currency_Convertor/"
-                      class="btn project-btn demo-btn"
-                    >
-                      <i class="fas fa-external-link-alt"></i> Live Demo
-                    </a>
-                  </div>
-                </div>
-                <div class="project-box-back">
-                  <h4>Technologies Used</h4>
-                  <ul class="tech-list">
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Education and Certification Section -->
-      <section id="education" class="section education">
-        <div class="container">
-          <div class="section-header">
-            <h2>Education & Certifications</h2>
-            <div class="underline"></div>
-          </div>
-          <div class="category-selector">
-            <button class="category-btn active" data-target="education-content">
-              Education
-            </button>
-            <button class="category-btn" data-target="certification-content">
-              Certifications
-            </button>
-            <button class="category-btn" data-target="internship-content">
-              Internships
-            </button>
-          </div>
-
-          <!-- Education Content -->
-          <div id="education-content" class="category-content active">
-            <div class="timeline">
-              <!-- College -->
-              <div class="timeline-item">
-                <div class="timeline-icon">
-                  <i class="fas fa-graduation-cap"></i>
-                </div>
-                <div class="timeline-content">
-                  <h3>
-                    Bachelor of Technology in Artificial Intelligence and Data
-                    Science
-                  </h3>
-                  <h4>Prathyusha Engineering College - Tiruvallur</h4>
-                  <p class="timeline-date">2023 - 2027</p>
-                  <p>
-                    I was excited to graduate and to be Specialize in Web
-                    Development and Artificial Intelligence.
-                  </p>
-                </div>
-              </div>
-
-              <!-- HSC -->
-              <div class="timeline-item">
-                <div class="timeline-icon">
-                  <i class="fas fa-school"></i>
-                </div>
-                <div class="timeline-content">
-                  <h3>Higher Secondary Certificate (HSC)</h3>
-                  <h4>Vivekananda Vidyalaya Mat. Hr. Secondary School</h4>
-                  <p class="timeline-date">2021 - 2023</p>
-                  <p>
-                    Bio-maths Stream. Completed with 80% marks in the state
-                    board examinations.
-                  </p>
-                </div>
-              </div>
-
-              <!-- SSLC -->
-              <div class="timeline-item">
-                <div class="timeline-icon">
-                  <i class="fas fa-book"></i>
-                </div>
-                <div class="timeline-content">
-                  <h3>Secondary School Leaving Certificate (SSLC)</h3>
-                  <h4>Vivekananda Vidyalaya Mat. Hr. Secondary School</h4>
-                  <p class="timeline-date">2021</p>
-                  <p>
-                    Completed with 95% marks in the state board examinations.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificate Modal -->
-          <div id="certificate-modal" class="modal">
-            <div class="modal-content">
-              <span class="close-btn">&times;</span>
-              <div class="certificate-container">
-                <h2 id="modal-cert-title">Certificate Title</h2>
-                <p id="modal-cert-issuer">Issuer</p>
-                <div class="certificate-image">
-                  <!-- Placeholder for certificate image -->
-                  <img
-                    id="modal-cert-image"
-                    src="assets/placeholder-certificate.svg"
-                    alt="Certificate"
-                  />
-                </div>
-                <p id="modal-cert-date" class="cert-date">Date</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certification Content -->
-          <div id="certification-content" class="category-content">
-            <div class="cards-container">
-              <div class="cert-card">
-                <div class="cert-icon">
+          <div class="skills-container">
+            <h3 class="skills-title">My Skills</h3>
+            <div class="skills">
+              <div class="skill-item" data-skill="python">
+                <div class="skill-icon">
                   <i class="fa-brands fa-python"></i>
                 </div>
-                <div class="cert-details">
-                  <h3>
-                    Programming for Everybody(Getting started with python)
-                  </h3>
-                  <p>Coursera</p>
-                  <p class="cert-date">Nov 2023</p>
-                  <a
-                    href="#"
-                    class="btn cert-btn"
-                    data-cert-title="Python-certificate"
-                    data-cert-issuer="Coursera"
-                    data-cert-date="2023"
-                    data-cert-image="assets/certificate/python.jpeg"
-                    >View Certificate</a
-                  >
+                <div class="skill-info">
+                  <h4>Python</h4>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                  </div>
                 </div>
               </div>
-
-              <div class="cert-card">
-                <div class="cert-icon">
-                  <i class="fa-brands fa-python"></i>
-                </div>
-                <div class="cert-details">
-                  <h3>Python</h3>
-                  <p>GUVI</p>
-                  <p class="cert-date">Dec 2023</p>
-                  <a
-                    href="#"
-                    class="btn cert-btn"
-                    data-cert-title="Python"
-                    data-cert-issuer="GUVI"
-                    data-cert-date="Dec 2023"
-                    data-cert-image="assets/certificate/GUVI-python.jpg"
-                    >View Certificate</a
-                  >
-                </div>
-              </div>
-
-              <div class="cert-card">
-                <div class="cert-icon">
-                  <i class="fa-brands fa-css3"></i>
-                </div>
-                <div class="cert-details">
-                  <h3>HTML and CSS Bootcamp</h3>
-                  <p>Let's Upgrade</p>
-                  <p class="cert-date">Oct 2024</p>
-                  <a
-                    href="#"
-                    class="btn cert-btn"
-                    data-cert-title="HTML and CSS Bootcamp"
-                    data-cert-issuer="Let's Upgrade"
-                    data-cert-date="OCT 2024"
-                    data-cert-image="assets/certificate/LETSUPGRADE(HTML).png"
-                    >View Certificate</a
-                  >
-                </div>
-              </div>
-
-              <div class="cert-card">
-                <div class="cert-icon">
+              <div class="skill-item" data-skill="java">
+                <div class="skill-icon">
                   <i class="fa-brands fa-java"></i>
                 </div>
-                <div class="cert-details">
-                  <h3>Programming in JAVA</h3>
-                  <p>NPTEL</p>
-                  <p class="cert-date">Jul-Oct 2024</p>
-                  <a
-                    href="#"
-                    class="btn cert-btn"
-                    data-cert-title="Programming in JAVA"
-                    data-cert-issuer="NPTEL"
-                    data-cert-date="Jul-Oct 2024"
-                    data-cert-image="assets/certificate/NPTEL.png"
-                    >View Certificate</a
-                  >
+                <div class="skill-info">
+                  <h4>JAVA</h4>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 85%"></div>
+                  </div>
                 </div>
               </div>
-
-              <div class="cert-card">
-                <div class="cert-icon">
-                  <i class="fa-solid fa-database"></i>
+              <div class="skill-item" data-skill="HTML5">
+                <div class="skill-icon">
+                  <i class="fab fa-html5"></i>
                 </div>
-                <div class="cert-details">
-                  <h3>MongoDB Basics for Students</h3>
-                  <p>MongoDB</p>
-                  <p class="cert-date">Jun 2025</p>
-                  <a
-                    href="#"
-                    class="btn cert-btn"
-                    data-cert-title="MongoDB Basics for Students"
-                    data-cert-issuer="MongoDB"
-                    data-cert-date="Jun 2025"
-                    data-cert-image="assets/certificate/MongoDB.jpg"
-                    >View Certificate</a
-                  >
+                <div class="skill-info">
+                  <h4>HTML5</h4>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="CSS3">
+                <div class="skill-icon">
+                  <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>CSS3</h4>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="JavaScript">
+                <div class="skill-icon">
+                  <i class="fab fa-js"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>JavaScript</h4>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 75%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="React">
+                <div class="skill-icon">
+                  <i class="fab fa-react"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>React</h4>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 50%"></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="animated-section">
+          <div class="floating-shapes">
+            <div class="shape shape1"></div>
+            <div class="shape shape2"></div>
+            <div class="shape shape3"></div>
+            <div class="shape shape4"></div>
+          </div>
+          <div class="quote">
+            <blockquote>
+              "The best way to predict the future is to create it."
+            </blockquote>
+            <cite>- Abraham Lincoln</cite>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- Internship Content -->
-          <!-- <div id="internship-content" class="category-content">
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <div class="section-header">
+          <h2>My Projects</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="project-gallery">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-box">
+              <div class="project-box-front">
+                <div class="project-icon">
+                  <i class="fa-solid fa-tree"></i>
+                </div>
+                <h3>Decision Tree Algorithm</h3>
+                <p>
+                  ID3 and C4.5 Decision Tree Algorithm with an interactive and
+                  engaging interface.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/ILFAN-K/Decision-Tree" class="btn project-btn github-btn">
+                    <i class="fab fa-github"></i> View on GitHub
+                  </a>
+                </div>
+              </div>
+              <div class="project-box-back">
+                <h4>Technologies Used</h4>
+                <ul class="tech-list">
+                  <li>Python</li>
+                  <li>Machine Learning</li>
+                  <li>Flask</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-box">
+              <div class="project-box-front">
+                <div class="project-icon">
+                  <i class="fa-solid fa-gamepad"></i>
+                </div>
+                <h3>Tic-Tac-Toe</h3>
+                <p>
+                  Classic Tic-Tac-Toe game with an interactive and engaging
+                  interface.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/ILFAN-K/Tic-Tac-Toe" class="btn project-btn github-btn">
+                    <i class="fab fa-github"></i> View on GitHub
+                  </a>
+                </div>
+              </div>
+              <div class="project-box-back">
+                <h4>Technologies Used</h4>
+                <ul class="tech-list">
+                  <li>JAVA</li>
+                  <li>JavaFX</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-box">
+              <div class="project-box-front">
+                <div class="project-icon">
+                  <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+                <h3>Currency Convertor</h3>
+                <p>
+                  Efficient real-time currency converter for accurate global
+                  exchange rate calculations.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/ILFAN-K/Currency_Convertor" class="btn project-btn github-btn">
+                    <i class="fab fa-github"></i> View on GitHub
+                  </a>
+                  <a href="https://ilfan-k.github.io/Currency_Convertor/" class="btn project-btn demo-btn">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+              <div class="project-box-back">
+                <h4>Technologies Used</h4>
+                <ul class="tech-list">
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education and Certification Section -->
+    <section id="education" class="section education">
+      <div class="container">
+        <div class="section-header">
+          <h2>Education & Certifications</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="category-selector">
+          <button class="category-btn active" data-target="education-content">
+            Education
+          </button>
+          <button class="category-btn" data-target="certification-content">
+            Certifications
+          </button>
+          <button class="category-btn" data-target="internship-content">
+            Internships
+          </button>
+        </div>
+
+        <!-- Education Content -->
+        <div id="education-content" class="category-content active">
+          <div class="timeline">
+            <!-- College -->
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="timeline-content">
+                <h3>
+                  Bachelor of Technology in Artificial Intelligence and Data
+                  Science
+                </h3>
+                <h4>Prathyusha Engineering College - Tiruvallur</h4>
+                <p class="timeline-date">2023 - 2027</p>
+                <p>
+                  I was excited to graduate and to be Specialize in Web
+                  Development and Artificial Intelligence.
+                </p>
+              </div>
+            </div>
+
+            <!-- HSC -->
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fas fa-school"></i>
+              </div>
+              <div class="timeline-content">
+                <h3>Higher Secondary Certificate (HSC)</h3>
+                <h4>Vivekananda Vidyalaya Mat. Hr. Secondary School</h4>
+                <p class="timeline-date">2021 - 2023</p>
+                <p>
+                  Bio-maths Stream. Completed with 80% marks in the state
+                  board examinations.
+                </p>
+              </div>
+            </div>
+
+            <!-- SSLC -->
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fas fa-book"></i>
+              </div>
+              <div class="timeline-content">
+                <h3>Secondary School Leaving Certificate (SSLC)</h3>
+                <h4>Vivekananda Vidyalaya Mat. Hr. Secondary School</h4>
+                <p class="timeline-date">2021</p>
+                <p>
+                  Completed with 95% marks in the state board examinations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate Modal -->
+        <div id="certificate-modal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="certificate-container">
+              <h2 id="modal-cert-title">Certificate Title</h2>
+              <p id="modal-cert-issuer">Issuer</p>
+              <div class="certificate-image">
+                <!-- Placeholder for certificate image -->
+                <img id="modal-cert-image" src="assets/placeholder-certificate.svg" alt="Certificate" />
+              </div>
+              <p id="modal-cert-date" class="cert-date">Date</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certification Content -->
+        <div id="certification-content" class="category-content">
+          <div class="cards-container">
+            <div class="cert-card">
+              <div class="cert-icon">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <div class="cert-details">
+                <h3>
+                  Programming for Everybody(Getting started with python)
+                </h3>
+                <p>Coursera</p>
+                <p class="cert-date">Nov 2023</p>
+                <a href="#" class="btn cert-btn" data-cert-title="Python-certificate" data-cert-issuer="Coursera"
+                  data-cert-date="2023" data-cert-image="assets/certificate/python.jpeg">View Certificate</a>
+              </div>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-icon">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <div class="cert-details">
+                <h3>Python</h3>
+                <p>GUVI</p>
+                <p class="cert-date">Dec 2023</p>
+                <a href="#" class="btn cert-btn" data-cert-title="Python" data-cert-issuer="GUVI"
+                  data-cert-date="Dec 2023" data-cert-image="assets/certificate/GUVI-python.jpg">View Certificate</a>
+              </div>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-icon">
+                <i class="fa-brands fa-css3"></i>
+              </div>
+              <div class="cert-details">
+                <h3>HTML and CSS Bootcamp</h3>
+                <p>Let's Upgrade</p>
+                <p class="cert-date">Oct 2024</p>
+                <a href="#" class="btn cert-btn" data-cert-title="HTML and CSS Bootcamp"
+                  data-cert-issuer="Let's Upgrade" data-cert-date="OCT 2024"
+                  data-cert-image="assets/certificate/LETSUPGRADE(HTML).png">View Certificate</a>
+              </div>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-icon">
+                <i class="fa-brands fa-java"></i>
+              </div>
+              <div class="cert-details">
+                <h3>Programming in JAVA</h3>
+                <p>NPTEL</p>
+                <p class="cert-date">Jul-Oct 2024</p>
+                <a href="#" class="btn cert-btn" data-cert-title="Programming in JAVA" data-cert-issuer="NPTEL"
+                  data-cert-date="Jul-Oct 2024" data-cert-image="assets/certificate/NPTEL.png">View Certificate</a>
+              </div>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-icon">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <div class="cert-details">
+                <h3>MongoDB Basics for Students</h3>
+                <p>MongoDB</p>
+                <p class="cert-date">Jun 2025</p>
+                <a href="#" class="btn cert-btn" data-cert-title="MongoDB Basics for Students"
+                  data-cert-issuer="MongoDB" data-cert-date="Jun 2025"
+                  data-cert-image="assets/certificate/MongoDB.jpg">View Certificate</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Internship Content -->
+        <!-- <div id="internship-content" class="category-content">
                     <div class="timeline">
                         <div class="timeline-item">
                             <div class="timeline-icon">
@@ -563,157 +497,140 @@
                         </div>
                     </div>
                 </div> -->
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Contact Section -->
-      <section id="contact" class="section contact">
-        <div class="container">
-          <div class="section-header">
-            <h2>Get In Touch</h2>
-            <div class="underline"></div>
-          </div>
-          <div class="contact-content">
-            <div class="contact-info">
-              <h3>Let's Connect</h3>
-              <p>
-                Feel free to reach out for collaborations, opportunities, or
-                just to say hello!
-              </p>
-
-              <div class="contact-details">
-                <div class="contact-item">
-                  <div class="contact-icon">
-                    <i class="fas fa-envelope"></i>
-                  </div>
-                  <div class="contact-text">
-                    <h4>Email</h4>
-                    <p>mohhamedilfan@gmail.com</p>
-                  </div>
-                </div>
-
-                <div class="contact-item">
-                  <div class="contact-icon">
-                    <i class="fas fa-phone"></i>
-                  </div>
-                  <div class="contact-text">
-                    <h4>Phone</h4>
-                    <p>+91 9629447618</p>
-                  </div>
-                </div>
-
-                <div class="contact-item">
-                  <div class="contact-icon">
-                    <i class="fas fa-map-marker-alt"></i>
-                  </div>
-                  <div class="contact-text">
-                    <h4>Location</h4>
-                    <p>Arakkonam, Tamilnadu</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="social-links">
-                <a
-                  href="https://www.linkedin.com/in/mohhamed-ilfan-k-14apr2006"
-                  class="social-link"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <a href="https://github.com/ILFAN-K" class="social-link"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a href="#" class="social-link"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </div>
-            </div>
-
-            <div class="contact-form-container">
-              <form id="contact-form" class="contact-form">
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" name="name" required />
-                </div>
-
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" required />
-                </div>
-
-                <div class="form-group">
-                  <label for="subject">Subject</label>
-                  <input type="text" id="subject" name="subject" required />
-                </div>
-
-                <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="5"
-                    required
-                  ></textarea>
-                </div>
-
-                <button type="submit" class="btn submit-btn">
-                  <span class="btn-text">Send Message</span>
-                  <div class="btn-icon"><i class="fas fa-paper-plane"></i></div>
-                </button>
-
-                <div class="form-status">
-                  <div class="success-message">
-                    <i class="fas fa-check-circle"></i>
-                    <p>Message sent successfully!</p>
-                  </div>
-                  <div class="error-message">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <p>Something went wrong. Please try again.</p>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
       <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <svg
-              width="30"
-              height="30"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M20 0L40 20L20 40L0 20L20 0Z" fill="#6C63FF" />
-              <path d="M20 10L30 20L20 30L10 20L20 10Z" fill="white" />
-            </svg>
-            <h3>K. Mohhamed Ilfan</h3>
+        <div class="section-header">
+          <h2>Get In Touch</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p>
+              Feel free to reach out for collaborations, opportunities, or
+              just to say hello!
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <p>mohhamedilfan@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Phone</h4>
+                  <p>+91 9629447618</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Location</h4>
+                  <p>Arakkonam, Tamilnadu</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/mohhamed-ilfan-k-14apr2006" class="social-link"><i
+                  class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/ILFAN-K" class="social-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
           </div>
-          <p class="copyright">© 2025 Mohhamed Ilfan. All Rights Reserved.</p>
-          <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
+
+          <div class="contact-form-container">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+
+              <button type="submit" class="btn submit-btn">
+                <span class="btn-text">Send Message</span>
+                <div class="btn-icon"><i class="fas fa-paper-plane"></i></div>
+              </button>
+
+              <div class="form-status">
+                <div class="success-message">
+                  <i class="fas fa-check-circle"></i>
+                  <p>Message sent successfully!</p>
+                </div>
+                <div class="error-message">
+                  <i class="fas fa-exclamation-circle"></i>
+                  <p>Something went wrong. Please try again.</p>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
+  </main>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top">
-      <i class="fas fa-arrow-up"></i>
-    </button>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 0L40 20L20 40L0 20L20 0Z" fill="#6C63FF" />
+            <path d="M20 10L30 20L20 30L10 20L20 10Z" fill="white" />
+          </svg>
+          <h3>K. Mohhamed Ilfan</h3>
+        </div>
+        <p class="copyright">© 2025 Mohhamed Ilfan. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Custom JS -->
-    <script src="js/main.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/email.js"></script>
-  </body>
+  <!-- Back to Top Button -->
+  <button class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/email.js"></script>
+</body>
+
 </html>
